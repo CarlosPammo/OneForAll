@@ -1,0 +1,13 @@
+c:\users\angel\documents\visual studio 2012\Projects\ProyectPhoneBook\ProyectPhoneBook\bin\Debug\ProyectPhoneBook.exe.config
+c:\users\angel\documents\visual studio 2012\Projects\ProyectPhoneBook\ProyectPhoneBook\bin\Debug\ProyectPhoneBook.exe
+c:\users\angel\documents\visual studio 2012\Projects\ProyectPhoneBook\ProyectPhoneBook\bin\Debug\ProyectPhoneBook.pdb
+c:\users\angel\documents\visual studio 2012\Projects\ProyectPhoneBook\ProyectPhoneBook\obj\Debug\ProyectPhoneBook.csprojResolveAssemblyReference.cache
+c:\users\angel\documents\visual studio 2012\Projects\ProyectPhoneBook\ProyectPhoneBook\obj\Debug\MainWindow.baml
+c:\users\angel\documents\visual studio 2012\Projects\ProyectPhoneBook\ProyectPhoneBook\obj\Debug\MainWindow.g.cs
+c:\users\angel\documents\visual studio 2012\Projects\ProyectPhoneBook\ProyectPhoneBook\obj\Debug\App.g.cs
+c:\users\angel\documents\visual studio 2012\Projects\ProyectPhoneBook\ProyectPhoneBook\obj\Debug\ProyectPhoneBook_MarkupCompile.cache
+c:\users\angel\documents\visual studio 2012\Projects\ProyectPhoneBook\ProyectPhoneBook\obj\Debug\ProyectPhoneBook.g.resources
+c:\users\angel\documents\visual studio 2012\Projects\ProyectPhoneBook\ProyectPhoneBook\obj\Debug\ProyectPhoneBook.Properties.Resources.resources
+c:\users\angel\documents\visual studio 2012\Projects\ProyectPhoneBook\ProyectPhoneBook\obj\Debug\ProyectPhoneBook.csproj.GenerateResource.Cache
+c:\users\angel\documents\visual studio 2012\Projects\ProyectPhoneBook\ProyectPhoneBook\obj\Debug\ProyectPhoneBook.exe
+c:\users\angel\documents\visual studio 2012\Projects\ProyectPhoneBook\ProyectPhoneBook\obj\Debug\ProyectPhoneBook.pdb
