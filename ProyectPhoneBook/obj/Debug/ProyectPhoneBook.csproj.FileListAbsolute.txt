@@ -11,3 +11,18 @@ c:\users\angel\documents\visual studio 2012\Projects\ProyectPhoneBook\ProyectPho
 c:\users\angel\documents\visual studio 2012\Projects\ProyectPhoneBook\ProyectPhoneBook\obj\Debug\ProyectPhoneBook.csproj.GenerateResource.Cache
 c:\users\angel\documents\visual studio 2012\Projects\ProyectPhoneBook\ProyectPhoneBook\obj\Debug\ProyectPhoneBook.exe
 c:\users\angel\documents\visual studio 2012\Projects\ProyectPhoneBook\ProyectPhoneBook\obj\Debug\ProyectPhoneBook.pdb
+C:\Users\Angel\Desktop\GitHub Angel\OneForAll\ProyectPhoneBook\bin\Debug\ProyectPhoneBook.exe.config
+C:\Users\Angel\Desktop\GitHub Angel\OneForAll\ProyectPhoneBook\obj\Debug\ProyectPhoneBook.exe
+C:\Users\Angel\Desktop\GitHub Angel\OneForAll\ProyectPhoneBook\obj\Debug\ProyectPhoneBook.pdb
+C:\Users\Angel\Desktop\GitHub Angel\OneForAll\ProyectPhoneBook\bin\Debug\ProyectPhoneBook.exe
+C:\Users\Angel\Desktop\GitHub Angel\OneForAll\ProyectPhoneBook\bin\Debug\ProyectPhoneBook.pdb
+C:\Users\Angel\Desktop\GitHub Angel\OneForAll\ProyectPhoneBook\obj\Debug\ProyectPhoneBook.csprojResolveAssemblyReference.cache
+C:\Users\Angel\Desktop\GitHub Angel\OneForAll\ProyectPhoneBook\obj\Debug\Business.baml
+C:\Users\Angel\Desktop\GitHub Angel\OneForAll\ProyectPhoneBook\obj\Debug\MainWindow.baml
+C:\Users\Angel\Desktop\GitHub Angel\OneForAll\ProyectPhoneBook\obj\Debug\Business.g.cs
+C:\Users\Angel\Desktop\GitHub Angel\OneForAll\ProyectPhoneBook\obj\Debug\MainWindow.g.cs
+C:\Users\Angel\Desktop\GitHub Angel\OneForAll\ProyectPhoneBook\obj\Debug\App.g.cs
+C:\Users\Angel\Desktop\GitHub Angel\OneForAll\ProyectPhoneBook\obj\Debug\ProyectPhoneBook_MarkupCompile.cache
+C:\Users\Angel\Desktop\GitHub Angel\OneForAll\ProyectPhoneBook\obj\Debug\ProyectPhoneBook.g.resources
+C:\Users\Angel\Desktop\GitHub Angel\OneForAll\ProyectPhoneBook\obj\Debug\ProyectPhoneBook.Properties.Resources.resources
+C:\Users\Angel\Desktop\GitHub Angel\OneForAll\ProyectPhoneBook\obj\Debug\ProyectPhoneBook.csproj.GenerateResource.Cache
