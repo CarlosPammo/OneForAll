@@ -40,10 +40,10 @@
                 <ColumnDefinition></ColumnDefinition>
                 
             </Grid.ColumnDefinitions>
-            <Button Grid.Column="0" Margin="10"  x:Name="NumberContacts" >
-                <Button Content="Numeros Registrados"/>
+            <Button Grid.Column="0" Margin="10"  x:Name="NumberContacts" Click="NumberContacts_Click" Content="Numeros Registrados" >
+                
             </Button>
-            <Button Grid.Column="1" Margin="10" Content="Nuevo Numero" x:Name="BtnOthers" ></Button>
+            <Button Grid.Column="1" Margin="10" Content="Nuevo Numero" x:Name="BtnOthers" Click="BtnOthers_Click" ></Button>
             
             
         </Grid>

@@ -24,5 +24,17 @@ namespace ProyectPhoneBook
         {
             InitializeComponent();
         }
+
+        private void BtnOthers_Click(object sender, RoutedEventArgs e)
+        {
+            ViewRegisterNumber v = new ViewRegisterNumber();
+            v.Show();
+        }
+
+        private void NumberContacts_Click(object sender, RoutedEventArgs e)
+        {
+            ViewDiary view = new ViewDiary();
+            view.Show();
+        }
     }
 }

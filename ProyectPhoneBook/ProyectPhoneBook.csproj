@@ -53,6 +53,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Contact.cs" />
     <Compile Include="ViewDiary.xaml.cs">
       <DependentUpon>ViewDiary.xaml</DependentUpon>
     </Compile>
@@ -113,6 +114,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PhoneBookModel\PhoneBookModel.csproj">
+      <Project>{0508ee22-dee1-4781-86c1-a7d42b328890}</Project>
+      <Name>PhoneBookModel</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

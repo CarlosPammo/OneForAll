@@ -26,3 +26,9 @@ C:\Users\Angel\Desktop\GitHub Angel\OneForAll\ProyectPhoneBook\obj\Debug\Proyect
 C:\Users\Angel\Desktop\GitHub Angel\OneForAll\ProyectPhoneBook\obj\Debug\ProyectPhoneBook.g.resources
 C:\Users\Angel\Desktop\GitHub Angel\OneForAll\ProyectPhoneBook\obj\Debug\ProyectPhoneBook.Properties.Resources.resources
 C:\Users\Angel\Desktop\GitHub Angel\OneForAll\ProyectPhoneBook\obj\Debug\ProyectPhoneBook.csproj.GenerateResource.Cache
+C:\Users\Angel\Desktop\GitHub Angel\OneForAll\ProyectPhoneBook\obj\Debug\ViewDiary.baml
+C:\Users\Angel\Desktop\GitHub Angel\OneForAll\ProyectPhoneBook\obj\Debug\ViewRegisterNumber.baml
+C:\Users\Angel\Desktop\GitHub Angel\OneForAll\ProyectPhoneBook\obj\Debug\ViewDiary.g.cs
+C:\Users\Angel\Desktop\GitHub Angel\OneForAll\ProyectPhoneBook\obj\Debug\ViewRegisterNumber.g.cs
+C:\Users\Angel\Desktop\GitHub Angel\OneForAll\ProyectPhoneBook\bin\Debug\PhoneBookModel.dll
+C:\Users\Angel\Desktop\GitHub Angel\OneForAll\ProyectPhoneBook\bin\Debug\PhoneBookModel.pdb
