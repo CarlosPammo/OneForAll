@@ -5,6 +5,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProyectPhoneBook", "Proyect
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhoneBookModel", "PhoneBookModel\PhoneBookModel.csproj", "{0508EE22-DEE1-4781-86C1-A7D42B328890}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Model", "Model", "{DDEC002D-1AFC-44BE-AB1B-F742DA7FC99B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "View", "View", "{E2B3E97C-78AD-4548-8BD8-C7AAAFD6314D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Controller", "Controller", "{8F417BAF-A24A-424F-BA06-B8CCC1BB0BBE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -22,5 +28,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0508EE22-DEE1-4781-86C1-A7D42B328890} = {DDEC002D-1AFC-44BE-AB1B-F742DA7FC99B}
+		{52011C95-DBA4-42DB-9ACC-D1AD2281B344} = {E2B3E97C-78AD-4548-8BD8-C7AAAFD6314D}
 	EndGlobalSection
 EndGlobal
