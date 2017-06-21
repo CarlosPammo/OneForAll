@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.IO;
 
 namespace ProyectPhoneBook
 {
@@ -24,17 +25,27 @@ namespace ProyectPhoneBook
         {
             InitializeComponent();
         }
-
+       
         private void BtnOthers_Click(object sender, RoutedEventArgs e)
         {
-            ViewRegisterNumber v = new ViewRegisterNumber();
-            v.Show();
+            StreamWriter dbtxt = new StreamWriter("C:/Users/Angel/Desktop/list.txt", true);
+            dbtxt.WriteLine( _Name.Text + ";" +_LastName+";"+ _Birtday.Text + ";"+_Email.Template+";" + _Fax.Text + ";"+_NumeroContacto.Text);
+            dbtxt.Close();
+            MessageBox.Show("Datos Guardados");
+           
         }
 
         private void NumberContacts_Click(object sender, RoutedEventArgs e)
         {
             ViewDiary view = new ViewDiary();
             view.Show();
+        }
+
+        private void btnNumbers_Click(object sender, RoutedEventArgs e)
+        {
+            ViewRegisterNumber v = new ViewRegisterNumber();
+            v.Show();
+
         }
     }
 }

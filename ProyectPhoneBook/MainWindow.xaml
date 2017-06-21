@@ -49,7 +49,7 @@
                 <ColumnDefinition></ColumnDefinition>
             </Grid.ColumnDefinitions>
         <TextBox x:Name="_NumeroContacto" Grid.Column="0" Margin="10" TabIndex="6"></TextBox>
-            <Button x:Name="btnNumbers" Grid.Column="1" Margin="10" Content="..."></Button>
+            <Button x:Name="btnNumbers" Grid.Column="1" Margin="10" Content="..." Click="btnNumbers_Click"></Button>
         </Grid>
         
         
