@@ -21,11 +21,11 @@ namespace ProyectPhoneBook
     /// </summary>
     public partial class ViewDiary : Window
     {
-       public List<Diary> contacts {get; set;}
-       public Diary diary{get;set;}
+       public List<Contact> contacts {get; set;}
+       public Contact diary{get;set;}
         public ViewDiary()
         {
-            contacts = new List<Diary>();/* { 
+            contacts = new List<Contact>();/* { 
             new Diary
             {
                 _ContactNumber="123123123",
@@ -34,7 +34,7 @@ namespace ProyectPhoneBook
                 _Fax="123123123",
             
             },
-            };*/
+            };*/diary= new Contact();
             InitializeComponent();
 
             DbContacts.DataContext = contacts;
@@ -44,19 +44,21 @@ namespace ProyectPhoneBook
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            int x=0;
-
+           
             StreamReader database = new StreamReader("C:/Users/Angel/Desktop/list.txt");
             while (!(database.EndOfStream) )
             {
-                diary= new Diary();
+                
                 string texto = database.ReadLine();
                 string [] leer = texto.Split(new char[] {';'});
-
-                diary._ContactNumber=leer[0];
-                diary._Email=leer[1];
-                diary._Fax=leer[2];
-                diary._Address=leer[3];
+                diary._TypeContact = leer[0];
+                diary._Name = leer[1];
+                diary._Lastname = leer[2];
+                diary.Birthday =leer[3];
+                diary._Email=leer[4];
+                diary._Fax=leer[5];
+                diary._ContactNumber=leer[6];
+                diary._Address=leer[7];
 
                 contacts.Add(diary);
                 DbContacts.DataContext=contacts;

@@ -1,7 +1,7 @@
 ﻿<Window x:Class="ProyectPhoneBook.ViewDiary"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="ViewDiary" Height="321.201" Width="408.127">
+        Title="ViewDiary" Height="321.201" Width="739.335">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition></RowDefinition>
@@ -23,9 +23,14 @@
         <DataGrid x:Name="DbContacts" Grid.Row="1" Margin="10" AutoGenerateColumns="False"
 				  DataContext="{Binding}" ItemsSource="{Binding}" IsReadOnly="True">
             <DataGrid.Columns>
-                <DataGridTextColumn Header="Telefono" Binding="{Binding Path=_ContactNumber}"></DataGridTextColumn>
+
+                <DataGridTextColumn Header="Tipo de Contacto" Binding="{Binding Path=_TypeContact}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Nombre" Binding="{Binding Path=_Name}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Apellidos" Binding="{Binding Path=_Lastname}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Fecha Nacimiento" Binding="{Binding Path=Birthday}"></DataGridTextColumn>
                 <DataGridTextColumn Header="Correo Electronico" Binding="{Binding Path=_Email}"></DataGridTextColumn>
                 <DataGridTextColumn Header="Fax" Binding="{Binding Path=_Fax}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Numero Telefonico" Binding="{Binding Path=_ContactNumber}"></DataGridTextColumn>
                 <DataGridTextColumn Header="Direccion" Binding="{Binding Path=_Address}"></DataGridTextColumn>
             </DataGrid.Columns>
         </DataGrid>

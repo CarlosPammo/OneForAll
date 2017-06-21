@@ -26,10 +26,12 @@ namespace ProyectPhoneBook
             InitializeComponent();
         }
        
+        
         private void BtnOthers_Click(object sender, RoutedEventArgs e)
         {
+           
             StreamWriter dbtxt = new StreamWriter("C:/Users/Angel/Desktop/list.txt", true);
-            dbtxt.WriteLine( _Name.Text + ";" +_LastName+";"+ _Birtday.Text + ";"+_Email.Template+";" + _Fax.Text + ";"+_NumeroContacto.Text);
+            dbtxt.WriteLine( boxTypeContact.Text + ";" + _Name.Text + ";" + _LastName.Text + ";" + _Birtday.Text + ";" + _Email.Text + ";" + _Fax.Text + ";" + _NumeroContacto.Text+";"+_Address.Text);
             dbtxt.Close();
             MessageBox.Show("Datos Guardados");
            
