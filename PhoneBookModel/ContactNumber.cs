@@ -8,8 +8,9 @@ namespace PhoneBookModel
 {
     public class ContactNumber
     {
-        public string _Number { get; set; }
-        public string _Region { get; set; }
-        public string _Description { get; set; }
+        
+        public string _ContactNumber { get; set; }
+        public string _NumberRegion { get; set; }
+        public string _Address { get; set; }
     }
 }

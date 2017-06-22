@@ -8,3 +8,8 @@ C:\Users\Angel\Desktop\lol\OneForAll\PhoneBookModel\bin\Debug\PhoneBookModel.pdb
 C:\Users\Angel\Desktop\lol\OneForAll\PhoneBookModel\obj\Debug\PhoneBookModel.csprojResolveAssemblyReference.cache
 C:\Users\Angel\Desktop\lol\OneForAll\PhoneBookModel\obj\Debug\PhoneBookModel.dll
 C:\Users\Angel\Desktop\lol\OneForAll\PhoneBookModel\obj\Debug\PhoneBookModel.pdb
+C:\Users\Angel\Desktop\version1\OneForAll\PhoneBookModel\bin\Debug\PhoneBookModel.dll
+C:\Users\Angel\Desktop\version1\OneForAll\PhoneBookModel\bin\Debug\PhoneBookModel.pdb
+C:\Users\Angel\Desktop\version1\OneForAll\PhoneBookModel\obj\Debug\PhoneBookModel.csprojResolveAssemblyReference.cache
+C:\Users\Angel\Desktop\version1\OneForAll\PhoneBookModel\obj\Debug\PhoneBookModel.dll
+C:\Users\Angel\Desktop\version1\OneForAll\PhoneBookModel\obj\Debug\PhoneBookModel.pdb

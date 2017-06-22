@@ -22,19 +22,17 @@ namespace ProyectPhoneBook
     public partial class ViewDiary : Window
     {
        public List<Contact> contacts {get; set;}
+       public List<ContactNumber> NumbersandAddress { get; set; }
        public Contact diary{get;set;}
+       public ContactNumber Numbers { get; set; }
         public ViewDiary()
         {
-            contacts = new List<Contact>();/* { 
-            new Diary
-            {
-                _ContactNumber="123123123",
-                _Email="ejemplo@.com",
-                _Address="AV. B",
-                _Fax="123123123",
+            contacts = new List<Contact>();
+            NumbersandAddress = new List<ContactNumber>();
             
-            },
-            };*/diary= new Contact();
+            diary= new Contact();
+            Numbers = new ContactNumber();
+            
             InitializeComponent();
 
             DbContacts.DataContext = contacts;
@@ -56,17 +54,31 @@ namespace ProyectPhoneBook
                 diary._Lastname = leer[2];
                 diary.Birthday =leer[3];
                 diary._Email=leer[4];
-                diary._Fax=leer[5];
-                diary._ContactNumber=leer[6];
-                diary._Address=leer[7];
+                diary._Fax=leer[5];         
 
                 contacts.Add(diary);
                 DbContacts.DataContext=contacts;
                 DbContacts.Items.Refresh();
             }
+            
+            StreamReader databaseNumbers = new StreamReader("C:/Users/Angel/Desktop/listPhoneandAddress.txt");
+            while (!databaseNumbers.EndOfStream)
+            {
+                string textNumbers = databaseNumbers.ReadLine();
+                string[] leernew = textNumbers.Split(new char[] { ';' });
+                Numbers._NumberRegion = leernew[0];
+                Numbers._ContactNumber = leernew[1];
+                Numbers._Address = leernew[2];
 
-           
+                NumbersandAddress.Add(Numbers);
+               
+            }    
 
+        }
+
+        private void ShowData(object sender, RoutedEventArgs e)
+        { 
+        
         }
         
         

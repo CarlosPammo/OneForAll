@@ -28,9 +28,12 @@ namespace ProyectPhoneBook
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
             
-            StreamWriter dbtxt = new StreamWriter("C:/Users/Angel/Desktop/list.txt",true);
-            dbtxt.WriteLine(_number.Text + ";" + _email.Text + ";" + _fax.Text + ";" + _Address.Text);
+           StreamWriter dbtxt = new StreamWriter("C:/Users/Angel/Desktop/listPhoneandAddress.txt",true);
+            dbtxt.WriteLine( ListRegionNumbers.Text+";"+PlusContactnumber.Text + ";" + PlusAddress.Text);
             dbtxt.Close();
+
+            StreamReader leertxt = new StreamReader("C:/Users/Angel/Desktop/listPhoneandAddress.txt");
+
 
         }
     }

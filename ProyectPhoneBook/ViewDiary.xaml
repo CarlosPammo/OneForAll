@@ -30,8 +30,15 @@
                 <DataGridTextColumn Header="Fecha Nacimiento" Binding="{Binding Path=Birthday}"></DataGridTextColumn>
                 <DataGridTextColumn Header="Correo Electronico" Binding="{Binding Path=_Email}"></DataGridTextColumn>
                 <DataGridTextColumn Header="Fax" Binding="{Binding Path=_Fax}"></DataGridTextColumn>
-                <DataGridTextColumn Header="Numero Telefonico" Binding="{Binding Path=_ContactNumber}"></DataGridTextColumn>
-                <DataGridTextColumn Header="Direccion" Binding="{Binding Path=_Address}"></DataGridTextColumn>
+                
+                <DataGridTemplateColumn>
+                    <DataGridTemplateColumn.CellEditingTemplate>
+                        <DataTemplate>
+                            <ComboBox ></ComboBox>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellEditingTemplate>
+                </DataGridTemplateColumn>
+                
             </DataGrid.Columns>
         </DataGrid>
         

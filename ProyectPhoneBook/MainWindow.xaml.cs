@@ -33,6 +33,10 @@ namespace ProyectPhoneBook
             StreamWriter dbtxt = new StreamWriter("C:/Users/Angel/Desktop/list.txt", true);
             dbtxt.WriteLine( boxTypeContact.Text + ";" + _Name.Text + ";" + _LastName.Text + ";" + _Birtday.Text + ";" + _Email.Text + ";" + _Fax.Text + ";" + _NumeroContacto.Text+";"+_Address.Text);
             dbtxt.Close();
+            StreamWriter dbtxtnumbers = new StreamWriter("C:/Users/Angel/Desktop/listPhoneandAddress.txt", true);
+            dbtxtnumbers.WriteLine(ListRegionNumbers.Text+";"+_NumeroContacto.Text + ";" + _Address.Text );
+            dbtxtnumbers.Close();
+
             MessageBox.Show("Datos Guardados");
            
         }
@@ -49,5 +53,14 @@ namespace ProyectPhoneBook
             v.Show();
 
         }
+
+        private void _NumeroContacto_GotFocus(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Estas en la caja numero");
+        }
+
+       
+
+       
     }
 }
