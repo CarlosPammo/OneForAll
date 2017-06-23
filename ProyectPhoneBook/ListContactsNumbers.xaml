@@ -1,0 +1,14 @@
+﻿<Window x:Name="ListN" x:Class="ProyectPhoneBook.ListContactsNumbers"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="ListContactsNumbers" Height="300" Width="300" Activated="ListN_Activated">
+    <Grid>
+        <DataGrid x:Name="BDlistNumbers">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Nº Region"></DataGridTextColumn>
+                <DataGridTextColumn Header="Numero de Contacto"></DataGridTextColumn>
+                <DataGridTextColumn Header="Direccion/Descripcion"></DataGridTextColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Window>
