@@ -107,8 +107,33 @@ namespace ProyectPhoneBook
             ListContactsNumbers listanumbers = new ListContactsNumbers(NumbersandAddress);
             listanumbers.Show();
         }
-        
 
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+
+            if (_RbName.IsChecked == true  && txtsearch.Text != "")
+            {
+                MessageBox.Show("tienes el "+ _RbName.Content+" activado y tienes text "+ txtsearch.Text );
+            }
+                else if(_RbLastname.IsChecked ==true && txtsearch.Text !="")
+            {
+                MessageBox.Show("tienes el " + _RbLastname.Content + " activado y tienes text " + txtsearch.Text);
+            }
+                else if (_RbPhoneNumber.IsChecked == true && txtsearch.Text != "")
+            {
+                MessageBox.Show("tienes el " + _RbPhoneNumber.Content + " activado y tienes text " + txtsearch.Text);
+            }
+            else
+            {
+                MessageBox.Show("tu texto esta vacio");
+            }
+
+        }
+
+        public void Search(string OptionTosearch,string text)
+        {
+            /* Realizar unas consulta para filtrar datos seguin a la opcion y buscar un texto */
+        }
        
     }
 }
