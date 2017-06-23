@@ -74,3 +74,5 @@ C:\Users\Angel\Desktop\version1\OneForAll\ProyectPhoneBook\bin\Debug\ProyectPhon
 C:\Users\Angel\Desktop\version1\OneForAll\ProyectPhoneBook\bin\Debug\ProyectPhoneBook.pdb
 C:\Users\Angel\Desktop\version1\OneForAll\ProyectPhoneBook\bin\Debug\PhoneBookModel.dll
 C:\Users\Angel\Desktop\version1\OneForAll\ProyectPhoneBook\bin\Debug\PhoneBookModel.pdb
+C:\Users\Angel\Desktop\version1\OneForAll\ProyectPhoneBook\obj\Debug\ListContactsNumbers.baml
+C:\Users\Angel\Desktop\version1\OneForAll\ProyectPhoneBook\obj\Debug\ListContactsNumbers.g.cs
