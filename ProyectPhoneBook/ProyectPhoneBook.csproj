@@ -53,6 +53,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="ListContactsNumbers.xaml.cs">
+      <DependentUpon>ListContactsNumbers.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ViewDiary.xaml.cs">
       <DependentUpon>ViewDiary.xaml</DependentUpon>
     </Compile>
@@ -60,6 +63,10 @@
       <DependentUpon>ViewRegisterNumber.xaml</DependentUpon>
     </Compile>
     <Page Include="EmergenceandOthers.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ListContactsNumbers.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

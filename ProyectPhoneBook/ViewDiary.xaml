@@ -32,13 +32,21 @@
                 <DataGridTextColumn Header="Fax" Binding="{Binding Path=_Fax}"></DataGridTextColumn>
                 
                 <DataGridTemplateColumn>
-                    <DataGridTemplateColumn.CellEditingTemplate>
+                    <DataGridTemplateColumn.CellTemplate>
                         <DataTemplate>
-                            <ComboBox ></ComboBox>
+                            <Button Content="Mostrar Numero(s)" Click="Show_Date"></Button>
                         </DataTemplate>
-                    </DataGridTemplateColumn.CellEditingTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
                 </DataGridTemplateColumn>
-                
+
+                <DataGridTemplateColumn>
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button Content="Modificar"></Button>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+
             </DataGrid.Columns>
         </DataGrid>
         

@@ -21,10 +21,16 @@ namespace ProyectPhoneBook
     /// </summary>
     public partial class ViewDiary : Window
     {
+        
        public List<Contact> contacts {get; set;}
        public List<ContactNumber> NumbersandAddress { get; set; }
-       public Contact diary{get;set;}
+                
+        public delegate void GetContact(List<ContactNumber> _contact);
+        public event GetContact click;
+       
+        public Contact diary{get;set;}
        public ContactNumber Numbers { get; set; }
+
         public ViewDiary()
         {
             contacts = new List<Contact>();
@@ -40,27 +46,42 @@ namespace ProyectPhoneBook
            
         }
 
+       
+
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
+
+            MostrarData();
+            
            
+             
+          
+        }
+
+        public void MostrarData()
+        {
             StreamReader database = new StreamReader("C:/Users/Angel/Desktop/list.txt");
-            while (!(database.EndOfStream) )
+            while (!(database.EndOfStream))
             {
-                
+
                 string texto = database.ReadLine();
-                string [] leer = texto.Split(new char[] {';'});
+                string[] leer = texto.Split(new char[] { ';' });
                 diary._TypeContact = leer[0];
                 diary._Name = leer[1];
                 diary._Lastname = leer[2];
-                diary.Birthday =leer[3];
-                diary._Email=leer[4];
-                diary._Fax=leer[5];         
+                diary.Birthday = leer[3];
+                diary._Email = leer[4];
+                diary._Fax = leer[5];
 
                 contacts.Add(diary);
-                DbContacts.DataContext=contacts;
+                DbContacts.DataContext = contacts;
                 DbContacts.Items.Refresh();
             }
-            
+        }
+        
+
+        public void MostrarDataNumbers()
+        {
             StreamReader databaseNumbers = new StreamReader("C:/Users/Angel/Desktop/listPhoneandAddress.txt");
             while (!databaseNumbers.EndOfStream)
             {
@@ -71,16 +92,21 @@ namespace ProyectPhoneBook
                 Numbers._Address = leernew[2];
 
                 NumbersandAddress.Add(Numbers);
-               
+
             }    
-
         }
 
-        private void ShowData(object sender, RoutedEventArgs e)
-        { 
-        
+        public void Show_Date()
+        {
+
+            MostrarDataNumbers();
+
+           /* NumbersandAddress.Where(c. el id.Contains(sea igual al codigo del contacto));
+                );*/
+            //actualizamos datagrid.items.refresh();
+            ListContactsNumbers listanumbers = new ListContactsNumbers(NumbersandAddress);
+            listanumbers.Show();
         }
-        
         
 
        
