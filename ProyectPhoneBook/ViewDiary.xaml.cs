@@ -31,6 +31,7 @@ namespace ProyectPhoneBook
         public Contact diary{get;set;}
        public ContactNumber Numbers { get; set; }
 
+        //Constructor sin parametros
         public ViewDiary()
         {
             contacts = new List<Contact>();
@@ -40,26 +41,22 @@ namespace ProyectPhoneBook
             Numbers = new ContactNumber();
             
             InitializeComponent();
-
-            DbContacts.DataContext = contacts;
-            DbContacts.Items.Refresh();
+                             
            
         }
 
        
-
+        //Boton mostrar
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
 
-            MostrarData();
-            
-           
-             
-          
+            MostrarData();         
         }
 
+        //Metodo para cargar datos de la tabla Contactos
         public void MostrarData()
         {
+            /*lee la tabla contactos desde un archivo txt y los muestra mediante un Datagrid */
             StreamReader database = new StreamReader("C:/Users/Angel/Desktop/list.txt");
             while (!(database.EndOfStream))
             {
@@ -79,9 +76,11 @@ namespace ProyectPhoneBook
             }
         }
         
-
+        //Metodo para cargar los datos de la tabla Numero de contacto
         public void MostrarDataNumbers()
         {
+            /*Linea para poder encontrar un archivo .txt y mostrar al usuario los datos
+             * guardados de la misma de la tabla "Numero de contacto"*/
             StreamReader databaseNumbers = new StreamReader("C:/Users/Angel/Desktop/listPhoneandAddress.txt");
             while (!databaseNumbers.EndOfStream)
             {
@@ -96,6 +95,7 @@ namespace ProyectPhoneBook
             }    
         }
 
+        //metodo para buscar un dato por medio de consultas con listas
         public void Show_Date()
         {
 
@@ -110,7 +110,7 @@ namespace ProyectPhoneBook
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
-
+            //Verificacion del control de los radioButton
             if (_RbName.IsChecked == true  && txtsearch.Text != "")
             {
                 MessageBox.Show("tienes el "+ _RbName.Content+" activado y tienes text "+ txtsearch.Text );

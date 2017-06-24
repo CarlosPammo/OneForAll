@@ -101,3 +101,5 @@ D:\Version1\OneForAll\ProyectPhoneBook\obj\Debug\ProyectPhoneBook_MarkupCompile.
 D:\Version1\OneForAll\ProyectPhoneBook\obj\Debug\ProyectPhoneBook.g.resources
 D:\Version1\OneForAll\ProyectPhoneBook\obj\Debug\ProyectPhoneBook.Properties.Resources.resources
 D:\Version1\OneForAll\ProyectPhoneBook\obj\Debug\ProyectPhoneBook.csproj.GenerateResource.Cache
+C:\Users\Angel\Desktop\version1\OneForAll\ProyectPhoneBook\bin\Debug\ClassLibrary1.dll
+C:\Users\Angel\Desktop\version1\OneForAll\ProyectPhoneBook\bin\Debug\ClassLibrary1.pdb

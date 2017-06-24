@@ -122,9 +122,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ClassLibrary1\ClassLibrary1.csproj">
+    <ProjectReference Include="..\ClassLibrary1\PhoneBookController.csproj">
       <Project>{3e793d4a-2fa0-4b1e-84d0-bda6ca307f7c}</Project>
-      <Name>ClassLibrary1</Name>
+      <Name>PhoneBookController</Name>
     </ProjectReference>
     <ProjectReference Include="..\PhoneBookModel\PhoneBookModel.csproj">
       <Project>{0508ee22-dee1-4781-86c1-a7d42b328890}</Project>

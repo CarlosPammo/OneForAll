@@ -33,7 +33,10 @@ namespace ProyectPhoneBook
         
         private void BtnOthers_Click(object sender, RoutedEventArgs e)
         {
-            Class1 c = new Class1();
+            //Instanciamos la clase ValidTextsMethods de el proyecto PhoneBookController
+            ValidTextsMethods c = new ValidTextsMethods();
+
+            //Usamos el metodo Isvalid que verifica si el campo de texto NumeroContacto es un texto numerico valido
             if (c.IsValid(_NumeroContacto.Text))
             {
                /* StreamWriter dbtxt = new StreamWriter("list.txt", true);
@@ -44,8 +47,10 @@ namespace ProyectPhoneBook
                 dbtxtnumbers.Close();
 
                 MessageBox.Show("Datos Guardados");*/
+
+                /*Realizamos conexion a la base de datos en acces*/
                 System.Data.OleDb.OleDbConnection conn = new
-       System.Data.OleDb.OleDbConnection();
+                System.Data.OleDb.OleDbConnection();
                 // TODO: Modify the connection string and include any
                 // additional required properties for your database.
                 conn.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;" +
@@ -77,21 +82,20 @@ namespace ProyectPhoneBook
 
         private void NumberContacts_Click(object sender, RoutedEventArgs e)
         {
+            //instanciamos la vista ViewDiary y lo mostramos con el boton
             ViewDiary view = new ViewDiary();
             view.Show();
         }
 
         private void btnNumbers_Click(object sender, RoutedEventArgs e)
         {
+            //Instanciamos la vista RegisterNumber y lo mostramos con este boton
             ViewRegisterNumber v = new ViewRegisterNumber();
             v.Show();
 
         }
 
-        private void _NumeroContacto_GotFocus(object sender, RoutedEventArgs e)
-        {
-            MessageBox.Show("Estas en la caja numero");
-        }
+        
 
        
 

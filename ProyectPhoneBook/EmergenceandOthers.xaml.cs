@@ -28,7 +28,7 @@ namespace ProyectPhoneBook
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            Class1 c = new Class1();
+            ValidTextsMethods c = new ValidTextsMethods();
             if (c.IsValid(Numero.Text))
             {
                 StreamWriter dbtxt = new StreamWriter("C:/Users/Angel/Desktop/listPhoneandOthers.txt", true);

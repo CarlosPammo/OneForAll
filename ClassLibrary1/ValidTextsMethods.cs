@@ -7,7 +7,7 @@ using System.Text;
 
 namespace ClassLibrary1
 {
-    public class Class1
+    public class ValidTextsMethods
     {
         /*public Class1()
         { }*/

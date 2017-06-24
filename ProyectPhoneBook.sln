@@ -1,8 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.21005.1
-MinimumVisualStudioVersion = 10.0.40219.1
+# Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProyectPhoneBook", "ProyectPhoneBook\ProyectPhoneBook.csproj", "{52011C95-DBA4-42DB-9ACC-D1AD2281B344}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhoneBookModel", "PhoneBookModel\PhoneBookModel.csproj", "{0508EE22-DEE1-4781-86C1-A7D42B328890}"
@@ -13,7 +11,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "View", "View", "{E2B3E97C-7
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Cotroller", "Cotroller", "{4703C631-3637-4090-8CF8-1734E784D28D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibrary1", "ClassLibrary1\ClassLibrary1.csproj", "{3E793D4A-2FA0-4B1E-84D0-BDA6CA307F7C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhoneBookController", "ClassLibrary1\PhoneBookController.csproj", "{3E793D4A-2FA0-4B1E-84D0-BDA6CA307F7C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

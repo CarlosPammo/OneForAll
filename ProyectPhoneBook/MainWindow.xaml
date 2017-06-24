@@ -51,9 +51,9 @@
                 <ColumnDefinition></ColumnDefinition>
                 <ColumnDefinition></ColumnDefinition>
             </Grid.ColumnDefinitions>
-        <TextBox  x:Name="_NumeroContacto" Grid.Column="0" Margin="10" TabIndex="6" Text="Ingrese Numero" UndoLimit="7"/>
-            <TextBox x:Name="_Address" Grid.Column="1" Margin="10" TabIndex="7" Text="Ingrese Direccion" UndoLimit="50"></TextBox>
-            <ComboBox x:Name="ListRegionNumbers" Grid.Column="2" Margin="10">
+        <TextBox  x:Name="_NumeroContacto" Grid.Column="0" Margin="10" TabIndex="6" Text="Ingrese Numero" UndoLimit="7" MaxLines="1" MaxLength="7"/>
+            <TextBox x:Name="_Address" Grid.Column="1" Margin="10" TabIndex="7" Text="Ingrese Direccion" UndoLimit="50" MaxLines="50"></TextBox>
+            <ComboBox x:Name="ListRegionNumbers" Grid.Column="2" Margin="10" SelectedIndex="0">
                 <ListBoxItem Content="Local"/>
             </ComboBox>
             <Button x:Name="btnNumbers" Grid.Column="3" Margin="10" Content="Mas Numeros" Click="btnNumbers_Click"></Button>
