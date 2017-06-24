@@ -128,3 +128,6 @@ C:\Users\Arodri\Desktop\Git\OneForAll\ProyectPhoneBook\obj\Debug\ProyectPhoneBoo
 C:\Users\Arodri\Desktop\Git\OneForAll\ProyectPhoneBook\obj\Debug\ProyectPhoneBook.g.resources
 C:\Users\Arodri\Desktop\Git\OneForAll\ProyectPhoneBook\obj\Debug\ProyectPhoneBook.Properties.Resources.resources
 C:\Users\Arodri\Desktop\Git\OneForAll\ProyectPhoneBook\obj\Debug\ProyectPhoneBook.csproj.GenerateResource.Cache
+C:\Users\pc9\Documents\Proyecto\OneForAll\ProyectPhoneBook\bin\Debug\ProyectPhoneBook.exe.config
+C:\Users\pc9\Documents\Proyecto\OneForAll\ProyectPhoneBook\obj\Debug\ProyectPhoneBook.exe
+C:\Users\pc9\Documents\Proyecto\OneForAll\ProyectPhoneBook\obj\Debug\ProyectPhoneBook.pdb

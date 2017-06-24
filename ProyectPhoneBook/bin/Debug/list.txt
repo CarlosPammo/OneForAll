@@ -3,3 +3,4 @@ Contacto;;;;;;Ingrese Numero;Ingrese Direccion
 Contacto;;;;;;987897987;Ingrese Direccion
 Contacto;;;;;;76447037;Ingrese Direccion
 Contacto;Anghelo;Rodriguez;16/6/2017;anghelo@gmail.com;4567878;4578787;Ingrese Direccion
+Contacto;angel;rodriguez;10/6/2017;acher@...;98798;7644177;Ingrese Direccion
