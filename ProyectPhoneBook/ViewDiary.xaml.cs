@@ -57,7 +57,7 @@ namespace ProyectPhoneBook
         public void MostrarData()
         {
             /*lee la tabla contactos desde un archivo txt y los muestra mediante un Datagrid */
-            StreamReader database = new StreamReader("C:/Users/Angel/Desktop/list.txt");
+            StreamReader database = new StreamReader("list.txt");
             while (!(database.EndOfStream))
             {
 
@@ -81,7 +81,7 @@ namespace ProyectPhoneBook
         {
             /*Linea para poder encontrar un archivo .txt y mostrar al usuario los datos
              * guardados de la misma de la tabla "Numero de contacto"*/
-            StreamReader databaseNumbers = new StreamReader("C:/Users/Angel/Desktop/listPhoneandAddress.txt");
+            StreamReader databaseNumbers = new StreamReader("listPhoneandAddress.txt");
             while (!databaseNumbers.EndOfStream)
             {
                 string textNumbers = databaseNumbers.ReadLine();
@@ -91,7 +91,6 @@ namespace ProyectPhoneBook
                 Numbers._Address = leernew[2];
 
                 NumbersandAddress.Add(Numbers);
-
             }    
         }
 

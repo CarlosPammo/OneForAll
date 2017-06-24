@@ -28,9 +28,7 @@ namespace ProyectPhoneBook
         {
             InitializeComponent();
         }
-       
-        
-        
+
         private void BtnOthers_Click(object sender, RoutedEventArgs e)
         {
             //Instanciamos la clase ValidTextsMethods de el proyecto PhoneBookController
@@ -39,46 +37,20 @@ namespace ProyectPhoneBook
             //Usamos el metodo Isvalid que verifica si el campo de texto NumeroContacto es un texto numerico valido
             if (c.IsValid(_NumeroContacto.Text))
             {
-               /* StreamWriter dbtxt = new StreamWriter("list.txt", true);
+                StreamWriter dbtxt = new StreamWriter("list.txt", true);
                 dbtxt.WriteLine(boxTypeContact.Text + ";" + _Name.Text + ";" + _LastName.Text + ";" + _Birtday.Text + ";" + _Email.Text + ";" + _Fax.Text + ";" + _NumeroContacto.Text + ";" + _Address.Text);
                 dbtxt.Close();
                 StreamWriter dbtxtnumbers = new StreamWriter("listPhoneandAddress.txt", true);
                 dbtxtnumbers.WriteLine(ListRegionNumbers.Text + ";" + _NumeroContacto.Text + ";" + _Address.Text);
                 dbtxtnumbers.Close();
 
-                MessageBox.Show("Datos Guardados");*/
-
-                /*Realizamos conexion a la base de datos en acces*/
-                System.Data.OleDb.OleDbConnection conn = new
-                System.Data.OleDb.OleDbConnection();
-                // TODO: Modify the connection string and include any
-                // additional required properties for your database.
-                conn.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;" +
-                    @"Data source= bdcontacts.accdb;Persist Security Info=False";
-                try
-                {
-                    conn.Open();
-                    // Insert code to process data.
-                    MessageBox.Show("Coneccion");
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("Failed to connect to data source");
-                }
+                MessageBox.Show("Datos Guardados");
             }
             else
             {
                 MessageBox.Show("Datos incorrectos");
             }
-           
-            
-
-            
-           
         }
-
-       
-
 
         private void NumberContacts_Click(object sender, RoutedEventArgs e)
         {
@@ -94,11 +66,5 @@ namespace ProyectPhoneBook
             v.Show();
 
         }
-
-        
-
-       
-
-       
     }
 }

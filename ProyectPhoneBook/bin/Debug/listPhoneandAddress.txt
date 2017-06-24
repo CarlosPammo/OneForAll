@@ -2,3 +2,4 @@
 ;Ingrese Numero;Ingrese Direccion
 ;987897987;Ingrese Direccion
 ;76447037;Ingrese Direccion
+Local;4578787;Ingrese Direccion
