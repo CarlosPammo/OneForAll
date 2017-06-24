@@ -27,12 +27,6 @@ namespace ProyectPhoneBook
 
         public ViewDiary()
         {
-            /*contacts = new List<Contact>();
-            NumbersandAddress = new List<ContactNumber>();
-            
-            diary= new Contact();
-            Numbers = new ContactNumber();*/
-            
             InitializeComponent();
         }
 
@@ -41,15 +35,6 @@ namespace ProyectPhoneBook
             Crud c = new Crud();
             DbContacts.DataContext = c.ViewTable();
             DbContacts.Items.Refresh();
-        }
-
-        private void Update_Click(object sender, RoutedEventArgs e)
-        {
-            Contact selected = (Contact)DbContacts.SelectedItem;
-            MainWindow editor = new MainWindow(selected);
-            editor.OnAccept += EditContact;
-
-            editor.Show();
         }
 
         private void EditContact(Contact contact)
@@ -64,56 +49,6 @@ namespace ProyectPhoneBook
             MessageBox.Show("Datos Cargados");
             View();
         }
-
-       /* public void MostrarData()
-        {
-            StreamReader database = new StreamReader("list.txt");
-            while (!(database.EndOfStream))
-            {
-
-                string texto = database.ReadLine();
-                string[] leer = texto.Split(new char[] { ';' });
-                diary._TypeContact = leer[0];
-                diary._Name = leer[1];
-                diary._Lastname = leer[2];
-                diary.Birthday = leer[3];
-                diary._Email = leer[4];
-                diary._Fax = leer[5];
-
-                contacts.Add(diary);
-                DbContacts.DataContext = contacts;
-                DbContacts.Items.Refresh();
-            }
-        }
-        
-
-        public void MostrarDataNumbers()
-        {
-            StreamReader databaseNumbers = new StreamReader("C:/Users/Angel/Desktop/listPhoneandAddress.txt");
-            while (!databaseNumbers.EndOfStream)
-            {
-                string textNumbers = databaseNumbers.ReadLine();
-                string[] leernew = textNumbers.Split(new char[] { ';' });
-                Numbers._NumberRegion = leernew[0];
-                Numbers._ContactNumber = leernew[1];
-                Numbers._Address = leernew[2];
-
-                NumbersandAddress.Add(Numbers);
-
-            }    
-        }
-
-        public void Show_Date()
-        {
-
-            MostrarDataNumbers();
-
-           /* NumbersandAddress.Where(c. el id.Contains(sea igual al codigo del contacto));
-                );*/
-            //actualizamos datagrid.items.refresh();
-   //         ListContactsNumbers listanumbers = new ListContactsNumbers(NumbersandAddress);
-    //        listanumbers.Show();
-   //     }
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
