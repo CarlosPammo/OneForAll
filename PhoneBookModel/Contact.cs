@@ -10,9 +10,11 @@ namespace PhoneBookModel
     {
         public string _Name { get; set; }
         public string _Lastname { get; set; }
-        public DateTime Birthday { get; set; }
-        public Diary _Diary { get; set; }
-        public string _TypeContact { get; set; }
+        public string Birthday { get; set; }        
+        public string _TypeContact { get; set; }        
+        public string _Email { get; set; }
+        public string _Fax { get; set; }
+        
 
     }
 }

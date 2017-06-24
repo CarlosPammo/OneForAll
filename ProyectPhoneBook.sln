@@ -1,6 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProyectPhoneBook", "ProyectPhoneBook\ProyectPhoneBook.csproj", "{52011C95-DBA4-42DB-9ACC-D1AD2281B344}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhoneBookModel", "PhoneBookModel\PhoneBookModel.csproj", "{0508EE22-DEE1-4781-86C1-A7D42B328890}"
@@ -9,7 +11,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Model", "Model", "{DDEC002D
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "View", "View", "{E2B3E97C-78AD-4548-8BD8-C7AAAFD6314D}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Controller", "Controller", "{8F417BAF-A24A-424F-BA06-B8CCC1BB0BBE}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Controller", "Controller", "{3FFCD4E5-297F-4D86-9DDE-C44FA35ABF00}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhoneBookController", "PhoneBookController\PhoneBookController.csproj", "{132BEB98-3820-480F-8E80-CFF356606A92}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,12 +29,17 @@ Global
 		{0508EE22-DEE1-4781-86C1-A7D42B328890}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0508EE22-DEE1-4781-86C1-A7D42B328890}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0508EE22-DEE1-4781-86C1-A7D42B328890}.Release|Any CPU.Build.0 = Release|Any CPU
+		{132BEB98-3820-480F-8E80-CFF356606A92}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{132BEB98-3820-480F-8E80-CFF356606A92}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{132BEB98-3820-480F-8E80-CFF356606A92}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{132BEB98-3820-480F-8E80-CFF356606A92}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{0508EE22-DEE1-4781-86C1-A7D42B328890} = {DDEC002D-1AFC-44BE-AB1B-F742DA7FC99B}
 		{52011C95-DBA4-42DB-9ACC-D1AD2281B344} = {E2B3E97C-78AD-4548-8BD8-C7AAAFD6314D}
+		{0508EE22-DEE1-4781-86C1-A7D42B328890} = {DDEC002D-1AFC-44BE-AB1B-F742DA7FC99B}
+		{132BEB98-3820-480F-8E80-CFF356606A92} = {3FFCD4E5-297F-4D86-9DDE-C44FA35ABF00}
 	EndGlobalSection
 EndGlobal

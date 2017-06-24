@@ -1,7 +1,7 @@
 ﻿<Window x:Class="ProyectPhoneBook.ViewDiary"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="ViewDiary" Height="321.201" Width="408.127">
+        Title="ViewDiary" Height="428.201" Width="1140.335">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition></RowDefinition>
@@ -10,23 +10,65 @@
         </Grid.RowDefinitions>
         
         <Grid Grid.Row="0">
+            
+            <Grid.RowDefinitions>
+                <RowDefinition Height="2*"></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            
+            
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="2*"></ColumnDefinition>
                 <ColumnDefinition></ColumnDefinition>
             </Grid.ColumnDefinitions>
             
-            <TextBox Grid.Column="0" Margin="10"></TextBox>
-            <Button Grid.Column="1" Margin="10" Content="Buscar"></Button>
+            <Grid Grid.Row="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <RadioButton x:Name="_RbName" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Content="Nombre" IsChecked="True"></RadioButton>
+                <RadioButton x:Name="_RbLastname" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Center" Content="Apellido"></RadioButton>
+                <RadioButton x:Name="_RbPhoneNumber" Grid.Column="3" HorizontalAlignment="Left" VerticalAlignment="Center" Content="Numero de Telefono"></RadioButton>
+
+            </Grid>
+            
+           
+            <TextBox x:Name="txtsearch" Grid.Column="0" Margin="10"></TextBox>
+            <Button Grid.Column="1" Margin="10" Content="Buscar" Click="Button_Click_2"></Button>
                        
         </Grid>
 
         <DataGrid x:Name="DbContacts" Grid.Row="1" Margin="10" AutoGenerateColumns="False"
 				  DataContext="{Binding}" ItemsSource="{Binding}" IsReadOnly="True">
             <DataGrid.Columns>
-                <DataGridTextColumn Header="Telefono" Binding="{Binding Path=_ContactNumber}"></DataGridTextColumn>
+
+                <DataGridTextColumn Header="Nombre" Binding="{Binding Path=_Name}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Apellidos" Binding="{Binding Path=_Lastname}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Fecha Nacimiento" Binding="{Binding Path=Birthday}"></DataGridTextColumn>
                 <DataGridTextColumn Header="Correo Electronico" Binding="{Binding Path=_Email}"></DataGridTextColumn>
                 <DataGridTextColumn Header="Fax" Binding="{Binding Path=_Fax}"></DataGridTextColumn>
-                <DataGridTextColumn Header="Direccion" Binding="{Binding Path=_Address}"></DataGridTextColumn>
+                
+                <DataGridTemplateColumn>
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button Content="Mostrar Numero(s)" ></Button>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+
+                <DataGridTemplateColumn>
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button Content="Modificar" Click="Update_Click"></Button>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+
             </DataGrid.Columns>
         </DataGrid>
         

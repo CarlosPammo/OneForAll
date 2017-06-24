@@ -1,0 +1,7 @@
+C:\Users\Arodri\Desktop\Git\OneForAll\PhoneBookController\bin\Debug\PhoneBookController.dll
+C:\Users\Arodri\Desktop\Git\OneForAll\PhoneBookController\bin\Debug\PhoneBookController.pdb
+C:\Users\Arodri\Desktop\Git\OneForAll\PhoneBookController\obj\Debug\PhoneBookController.csprojResolveAssemblyReference.cache
+C:\Users\Arodri\Desktop\Git\OneForAll\PhoneBookController\obj\Debug\PhoneBookController.dll
+C:\Users\Arodri\Desktop\Git\OneForAll\PhoneBookController\obj\Debug\PhoneBookController.pdb
+C:\Users\Arodri\Desktop\Git\OneForAll\PhoneBookController\bin\Debug\PhoneBookModel.dll
+C:\Users\Arodri\Desktop\Git\OneForAll\PhoneBookController\bin\Debug\PhoneBookModel.pdb

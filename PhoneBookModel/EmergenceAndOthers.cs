@@ -8,7 +8,9 @@ namespace PhoneBookModel
 {
     public class EmergenceAndOthers
     {
+        public string _Name { get; set; }
+        public string _logo { get; set; }//una imagen 
         public string _Description { get; set; }
-        public Diary _Diary { get; set; }
+        
     }
 }
