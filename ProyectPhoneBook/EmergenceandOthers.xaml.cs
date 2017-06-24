@@ -11,6 +11,8 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.IO;
+using ClassLibrary1;
 
 namespace ProyectPhoneBook
 {
@@ -22,6 +24,23 @@ namespace ProyectPhoneBook
         public Business()
         {
             InitializeComponent();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Class1 c = new Class1();
+            if (c.IsValid(Numero.Text))
+            {
+                StreamWriter dbtxt = new StreamWriter("C:/Users/Angel/Desktop/listPhoneandOthers.txt", true);
+                dbtxt.WriteLine(Numero.Text + ";" + _Description.Text );
+                dbtxt.Close();
+
+                    //StreamReader leertxt = new StreamReader("C:/Users/Angel/Desktop/listPhoneandAddress.txt");
+            }
+            else
+            {
+                MessageBox.Show("Datos Incorrectos");
+            }
         }
     }
 }
